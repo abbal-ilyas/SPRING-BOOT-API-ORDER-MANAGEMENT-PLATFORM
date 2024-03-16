@@ -15,11 +15,7 @@ Bienvenue sur la Plateforme de Gestion des Commandes ! Ce projet est développé
 - Maven ![Maven](https://img.shields.io/badge/Maven-3.8.2-red)
 - Thymeleaf ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.0.12-brightgreen)
 
-## Structure du Projet 🏗️
 
-Le projet est structuré comme suit :
-
-bash
 
 
 ## Installation et Configuration 🛠️
