@@ -1,0 +1,226 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": true,
+    "cutInterfaceStructures": true,
+    "cutDataStructures": true,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 3,
+    "backwardDepth": 3,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "com.gestion.App.Fournisseurs.Fournisseurs",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_75091991 { 
+   	label=gestion
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   subgraph cluster_1807744636 { 
+   	label=App
+	labeljust=l
+	fillcolor="#d8d8d8"
+	style=filled
+   
+   Banques285104926[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Banques</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   idBanque: Long [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   nomBanque: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># canEqual(other: Object): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Consommables771436986[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Consommables</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   fournisseurs: Fournisseurs [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   idConsommable: Long [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   personnes: Personnes [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   quantite: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   typeConsommable: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># canEqual(other: Object): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Fournisseurs781184017[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Fournisseurs</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   idFournisseur: Long [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   responsable: Personnes [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   siteWeb: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># canEqual(other: Object): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Informations132418842[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Informations</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   adresse: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   codePostal: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   email: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   fax: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   idInformations: Long [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   nom: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   prenom: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   telephone: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   ville: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># canEqual(other: Object): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Materiel1903333186[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Materiel</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   dateAcquisition: Date [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   dateAffectation: Date [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   fournisseurs: Fournisseurs [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   idMateriel: Long [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   numeroInventaire: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   responsable: Personnes [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   typeMateriel: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># canEqual(other: Object): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+
+Personnes954147736[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Personnes</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   banque: Banques [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   cin: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   grade: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   idPersonne: Long [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   informations: Informations [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   motDePasse: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   numeroRIB: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   numeroSOM: String [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   responsabilite: String [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" ># canEqual(other: Object): boolean</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+} 
+
+'edges    
+Consommables771436986 -> Fournisseurs781184017[label="fournisseurs
+[0..1]"];
+Fournisseurs781184017 -> Personnes954147736[label="responsable
+[0..1]"];
+Materiel1903333186 -> Fournisseurs781184017[label="fournisseurs
+[0..1]"];
+Personnes954147736 -> Banques285104926[label="banque
+[0..1]"];
+Personnes954147736 -> Informations132418842[label="informations
+[0..1]"];
+    
+}
+@enduml
