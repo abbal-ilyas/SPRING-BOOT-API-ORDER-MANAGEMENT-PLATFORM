@@ -35,9 +35,11 @@ git clone https://github.com/votre-utilisateur/plateforme-gestion-commandes.git
 
     Exécutez l'application :
 
-bash
-
 mvn spring-boot:run
+
+```bash
+
+
 
 Contribuer 📝
 
