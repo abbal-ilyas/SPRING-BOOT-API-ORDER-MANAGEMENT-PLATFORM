@@ -1,44 +1,66 @@
-# Plateforme de Gestion des Commandes 🚀
+# Gestion de Commandes (Backend) avec Spring Boot et MySQL 📦
 
-Bienvenue sur la Plateforme de Gestion des Commandes ! Ce projet est développé avec Spring Boot et utilise MySQL comme base de données pour gérer les commandes.
+## Description ℹ️
 
-## Fonctionnalités
+Le backend de la plateforme de gestion des commandes est une API RESTful construite avec Spring Boot qui fournit des fonctionnalités pour gérer efficacement les enregistrements de commandes.
 
-- Gestion des commandes
-- Suivi des commandes en temps réel
-- Génération de rapports et d'analyses
+## Fonctionnalités 🚀
 
-## Technologies Utilisées 🛠️
+- **Opérations CRUD** : Opérations de création, lecture, mise à jour et suppression pour gérer les informations des commandes.
+- **Suivi des Commandes** : Enregistrer et récupérer les enregistrements des commandes.
+- **Authentification et Autorisation** : Sécurisation des endpoints de l'API avec des mécanismes d'authentification et d'autorisation.
+- **Contrôle d'Accès Basé sur les Rôles** : Définition des rôles et des permissions pour restreindre l'accès à des endpoints spécifiques.
+- **Documentation de l'API** : Documentation interactive de l'API utilisant Swagger UI.
 
-- Spring Boot ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-2.5.4-brightgreen)
-- MySQL ![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)
-- Maven ![Maven](https://img.shields.io/badge/Maven-3.8.2-red)
-- Thymeleaf ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.0.12-brightgreen)
+## Prérequis 🛠️
 
+Assurez-vous d'avoir les éléments suivants installés :
 
+- Java Development Kit (JDK) 21
+- Apache Maven
+- MySQL Database
 
+## Installation ⚙️
 
-## Installation et Configuration 🛠️
+1. Cloner le dépôt :
 
-1. Clonez le repository :
+    ```bash
+    git clone https://github.com/votre_utilisateur/votre_projet.git
+    ```
 
-```bash
-git clone https://github.com/votre-utilisateur/plateforme-gestion-commandes.git
+2. Naviguer vers le répertoire du projet :
 
-    Importez le projet dans votre IDE préféré.
+    ```bash
+    cd votre_projet
+    ```
 
-    Configurez les propriétés de la base de données dans le fichier application.properties.
+3. Construire le projet :
 
-    Exécutez l'application :
+    ```bash
+    mvn clean install
+    ```
 
-mvn spring-boot:run
+4. Lancer l'application :
 
-```
+    ```bash
+    mvn spring-boot:run
+    ```
 
+## Configuration 🔧
 
+- Configuration de la base de données : Mettez à jour `application.properties` avec les détails de connexion de votre base de données MySQL.
+- Configuration de la sécurité : Personnalisez les paramètres de sécurité dans `SecurityConfig.java`.
 
-Contribuer 📝
+## Utilisation 📝
 
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue pour des fonctionnalités manquantes ou des bogues, ou à soumettre une pull request.
-Licence 📄
+- Accéder à la documentation de l'API sur `http://localhost:8080/` pour obtenir les détails des endpoints.
+- Utiliser les méthodes HTTP appropriées (GET, POST, PUT, DELETE) pour interagir avec l'API.
+- Les endpoints sécurisés peuvent nécessiter une authentification. Obtenez un jeton d'accès en utilisant le mécanisme d'authentification fourni.
 
+## Contribution 🤝
+
+Les contributions sont les bienvenues ! Veuillez ouvrir une issue ou soumettre une pull request pour toute amélioration ou correction de bogue.
+
+## Licence 📚
+
+Ce projet est uniquement à des fins éducatives dans le cadre universitaire. Vous êtes libre d'utiliser, de modifier et de distribuer le code à des fins académiques. Cependant, l'utilisation commerciale et la redistribution en dehors du contexte universitaire ne sont pas autorisées sans permission explicite.
