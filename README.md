@@ -2,7 +2,7 @@
 
 ## Description ℹ️
 
-Le backend de la plateforme de gestion des commandes est une API RESTful construite avec Spring Boot qui fournit des fonctionnalités pour gérer efficacement les enregistrements de commandes.
+Le backend de la plateforme de gestion des commandes est une API RESTful construite avec Spring Boot qui fournit des fonctionnalités pour gérer efficacement les enregistrements de commandes et tous composants liées a ce processus. .
 
 ## Fonctionnalités 🚀
 
