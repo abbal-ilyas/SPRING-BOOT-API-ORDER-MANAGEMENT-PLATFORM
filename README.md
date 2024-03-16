@@ -6,7 +6,7 @@ Le backend de la plateforme de gestion des commandes est une API RESTful constru
 
 ## Fonctionnalités 🚀
 
-- **Opérations CRUD** : Opérations de création, lecture, mise à jour et suppression pour gérer les informations des commandes.
+- **Opérations CRUD** : Opérations de création, lecture, mise à jour et suppression pour gérer les informations des commandes et tous composants liées a ce processus.
 - **Suivi des Commandes** : Enregistrer et récupérer les enregistrements des commandes.
 - **Authentification et Autorisation** : Sécurisation des endpoints de l'API avec des mécanismes d'authentification et d'autorisation.
 - **Contrôle d'Accès Basé sur les Rôles** : Définition des rôles et des permissions pour restreindre l'accès à des endpoints spécifiques.
@@ -53,7 +53,7 @@ Assurez-vous d'avoir les éléments suivants installés :
 
 ## Utilisation 📝
 
-- Accéder à la documentation de l'API sur `http://localhost:8080/` pour obtenir les détails des endpoints.
+- Accéder à  l'API sur `http://localhost:8080/` 
 - Utiliser les méthodes HTTP appropriées (GET, POST, PUT, DELETE) pour interagir avec l'API.
 - Les endpoints sécurisés peuvent nécessiter une authentification. Obtenez un jeton d'accès en utilisant le mécanisme d'authentification fourni.
 
