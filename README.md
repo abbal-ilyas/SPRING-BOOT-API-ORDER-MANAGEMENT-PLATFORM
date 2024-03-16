@@ -37,7 +37,7 @@ git clone https://github.com/votre-utilisateur/plateforme-gestion-commandes.git
 
 mvn spring-boot:run
 
-```bash
+```
 
 
 
