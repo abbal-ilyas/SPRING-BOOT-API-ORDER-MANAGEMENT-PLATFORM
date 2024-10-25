@@ -25,13 +25,13 @@ Assurez-vous d'avoir les éléments suivants installés :
 1. Cloner le dépôt :
 
     ```bash
-    git clone https://github.com/votre_utilisateur/votre_projet.git
+    git clone https://github.com//abbal-ilyas/SPRING-BOOT-API-ORDER-MANAGEMENT-PLATFORM.git
     ```
 
 2. Naviguer vers le répertoire du projet :
 
     ```bash
-    cd votre_projet
+    cd SPRING-BOOT-API-ORDER-MANAGEMENT-PLATFORM
     ```
 
 3. Construire le projet :
